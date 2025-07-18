@@ -10,7 +10,7 @@ const ExhibitionsList = ({ showNotification }) => {
 
   const fetchExhibitions = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/exhibitions');
+      const response = await fetch('/api/exhibitions');
       if (!response.ok) {
         throw new Error('მონაცემების მიღება ვერ მოხერხდა.');
       }
